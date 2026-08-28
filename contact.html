@@ -1,39 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-  <title>Contact - Joel Bisyonet</title>
-</head>
+  <head>
+    <title>Contact - Joel Bisyonet</title>
+  </head>
 
-<body>
+  <body>
+    <header>
+      <h1>Joel Bisyonet</h1>
 
-<header>
-  <h1>Joel Bisyonet</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+    <main>
+      <h2>Contact Us</h2>
 
-<main>
+      <form>
+        <fieldset>
+          <legend>Your details</legend>
 
-  <h2>Contact Us</h2>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
 
-  <p>If you have questions about our products, you can reach us through:</p>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
 
-  <ul>
-    <li>Email: shanharvie02@gmail.com</li>
-    <li>Facebook: Allan Poor</li>
-  </ul>
+          <label for="subject">Subject</label>
 
-</main>
+           <select id="subject" name="subject">
+           <option value="product-question">Product Question</option>
+           <option value="order-status">Order Status</option>
+           <option value="product-availability">Product Availability</option>
+           <option value="other">Something Else</option>
+           </select>
 
-<footer>
-  <p>&copy; 2026 Joel Bisyonet</p>
-</footer>
+             <label for="message">Message</label>
+             <textarea id="message" name="message" required></textarea>
+        </fieldset>
+        <button type="submit">Send message</button>
+      </form>
 
-</body>
+      <p>If you have questions about our products, you can reach us through:</p>
+
+      <ul>
+        <li>Email: shanharvie02@gmail.com</li>
+        <li>Facebook: Allan Poor</li>
+      </ul>
+    </main>
+
+    <footer>
+      <p>&copy; 2026 Joel Bisyonet</p>
+    </footer>
+  </body>
 </html>
