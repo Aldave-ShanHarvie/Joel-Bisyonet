@@ -15,7 +15,12 @@
 
     <h1>Budget PC Package</h1>
 
-   <img src="../pc.jpeg" alt="Budget PC Package" width="500">
+    <img src="../pc.jpeg" alt="Budget PC Package">
+         <img
+          src="pc.jpeg"
+          alt="Budget PC Package"
+          style="width: 150px; height: auto"
+        />
 
     <p>
       This Budget PC Package is a practical computer setup for students,
@@ -53,5 +58,43 @@
         <td>₱14,999</td>
       </tr>
     </table>
+
+    <h2>Order Enquiry</h2>
+
+<form>
+
+  <label for="quantity">Quantity</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="20">
+
+  <fieldset>
+  <legend>Delivery Method</legend>
+
+  <label for="pickup">Store Pickup</label>
+  <input type="radio" id="pickup" name="delivery" value="pickup">
+
+  <label for="standard">Standard Delivery</label>
+  <input type="radio" id="standard" name="delivery" value="standard">
+
+  <label for="express">Express Delivery</label>
+  <input type="radio" id="express" name="delivery" value="express">
+</fieldset>
+  <h3>Optional Extras</h3>
+
+<label for="windows">Windows Installation</label>
+<input type="checkbox" id="windows" name="extras" value="windows">
+
+<label for="setup">PC Setup Assistance</label>
+<input type="checkbox" id="setup" name="extras" value="setup">
+
+<label for="express-handling">Express Handling</label>
+<input type="checkbox" id="express-handling" name="extras" value="express-handling">
+
+<label for="contact-email">Contact Email</label>
+<input type="email" id="contact-email" name="contact-email" required>
+
+<button type="submit">Send order enquiry</button>
+
+</form>
+
   </body>
 </html>
