@@ -32,21 +32,26 @@ nav a:hover {
 }
 
 main {
-  width: 80%;
+  width: 70%;
+  max-width: 800px;
   margin: 20px auto;
+  text-align: center;
 }
 
-article,
-section {
+article {
   background-color: white;
   border: 1px solid #ccc;
   padding: 20px;
-  margin-bottom: 20px;
+  margin: 0 auto 20px;
+  width: 80%;
+  text-align: center;
 }
 
-img {
-  max-width: 100%;
+article img {
+  display: block;
+  width: 200px;
   height: auto;
+  margin: 0 auto 20px;
 }
 
 footer {
