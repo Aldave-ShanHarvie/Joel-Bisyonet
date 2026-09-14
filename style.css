@@ -23,34 +23,37 @@ body {
 
 /* Layout Regions */
 
-header {
+.site-header {
   background-color: var(--dark-ink);
   color: white;
   padding: 20px;
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav {
-  margin-top: 15px;
+.header-info h1 {
+  margin: 0;
 }
 
-nav ul {
+.header-info p {
+  margin: 5px 0 0;
+}
+
+.site-header nav ul {
+  display: flex;
+  gap: 20px;
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-nav li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-nav a {
+.site-header nav a {
   color: white;
   text-decoration: none;
 }
 
-nav a:hover {
+.site-header nav a:hover {
   color: var(--brand-color);
 }
 
@@ -59,6 +62,15 @@ main {
   max-width: 800px;
   margin: 20px auto;
   text-align: center;
+}
+
+/* Centered Element */
+
+.hero {
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
