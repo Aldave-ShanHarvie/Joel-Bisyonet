@@ -58,8 +58,8 @@ body {
 }
 
 main {
-  width: 70%;
-  max-width: 800px;
+  width: 90%;
+  max-width: 1100px;
   margin: 20px auto;
   text-align: center;
 }
@@ -73,44 +73,52 @@ main {
   align-items: center;
 }
 
-footer {
-  background-color: var(--dark-ink);
-  color: white;
-  text-align: center;
-  padding: 10px;
-}
+/* Product Grid */
 
-/* Components */
-
-article {
-  background-color: white;
-  border: 1px solid var(--muted-grey);
-  padding: 20px;
-  margin: 0 auto 20px;
-  width: 80%;
-  text-align: center;
-}
-
-article img {
-  display: block;
-  width: 200px;
-  height: auto;
-  margin: 0 auto 20px;
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
 
 /* Product Cards */
 
 .product-card {
+  flex: 1 1 240px;
   background-color: white;
   border-radius: 10px;
   padding: 20px;
   border-left: 5px solid var(--brand-color);
-  margin-bottom: 20px;
+  text-align: center;
+}
+
+.product-card img {
+  display: block;
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 20px;
 }
 
 .product-card h3 {
   font-size: 24px;
   color: var(--brand-color);
+}
+
+/* Footer */
+
+footer {
+  background-color: var(--dark-ink);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Components */
+
+article {
+  border: 1px solid var(--muted-grey);
 }
 
 /* Contact Form */
