@@ -21,15 +21,16 @@ body {
   line-height: 1.6;
 }
 
-/* Page Grid Skeleton */
+/* Page Grid - Mobile First */
 
 .page {
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: 1fr;
   grid-template-areas:
-    "masthead masthead"
-    "side main"
-    "foot foot";
+    "masthead"
+    "main"
+    "side"
+    "foot";
   gap: 16px;
   min-height: 100vh;
 }
@@ -42,8 +43,10 @@ body {
   color: white;
   padding: 20px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 15px;
   align-items: center;
+  text-align: center;
 }
 
 .header-info h1 {
@@ -56,6 +59,8 @@ body {
 
 .site-header nav ul {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
   list-style: none;
   padding: 0;
@@ -78,6 +83,7 @@ aside {
   background-color: white;
   padding: 20px;
   border: 1px solid var(--muted-grey);
+  margin: 0 16px;
 }
 
 aside h2,
@@ -93,16 +99,17 @@ aside ul {
 
 main {
   grid-area: main;
-  width: 90%;
+  width: 100%;
   max-width: 1100px;
   margin: 20px auto;
+  padding: 0 16px;
   text-align: center;
 }
 
-/* Centered Element */
+/* Hero */
 
 .hero {
-  height: 200px;
+  min-height: 160px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,6 +127,7 @@ main {
 
 .product-card {
   flex: 1 1 240px;
+  min-width: 0;
   background-color: white;
   border-radius: 10px;
   padding: 20px;
@@ -138,16 +146,6 @@ main {
 .product-card h3 {
   font-size: 24px;
   color: var(--brand-color);
-}
-
-/* Footer */
-
-footer {
-  grid-area: foot;
-  background-color: var(--dark-ink);
-  color: white;
-  text-align: center;
-  padding: 10px;
 }
 
 /* Components */
@@ -173,6 +171,7 @@ legend {
 input,
 textarea {
   padding: 10px;
+  max-width: 100%;
 }
 
 input:focus,
@@ -188,4 +187,55 @@ button[type="submit"] {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+  grid-area: foot;
+  background-color: var(--dark-ink);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
+
+/* Tablet and Up */
+
+@media (min-width: 700px) {
+  .page {
+    grid-template-columns: 220px 1fr;
+    grid-template-areas:
+      "masthead masthead"
+      "side main"
+      "foot foot";
+  }
+
+  .site-header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .site-header nav ul {
+    justify-content: flex-end;
+  }
+
+  aside {
+    margin: 20px 0 20px 16px;
+  }
+
+  main {
+    width: 90%;
+    padding: 0;
+  }
+
+  .product-detail-image {
+  display: block;
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 20px;
+}
 }

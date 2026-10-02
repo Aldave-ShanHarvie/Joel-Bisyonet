@@ -1,97 +1,179 @@
 <!doctype html>
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budget PC Package</title>
     <link rel="stylesheet" href="../style.css">
   </head>
 
   <body>
-    <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../about.html">About</a></li>
-        <li><a href="../contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <div class="page">
 
-    <h1>Budget PC Package</h1>
+      <header class="site-header">
+        <div class="header-info">
+          <h1>Joel Bisyonet</h1>
+          <p>A student-friendly store where you can hangout with your friends</p>
+        </div>
 
-    <img src="../pc.jpeg" alt="Budget PC Package">
+        <nav>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
 
+      <aside>
+        <h2>Shop Categories</h2>
 
-    <p>
-      This Budget PC Package is a practical computer setup for students,
-      beginners, and everyday use. It includes a Ryzen 3 3200G processor, 8GB
-      RAM, 256GB SSD, integrated graphics, and a 19-inch monitor.
-    </p>
+        <ul>
+          <li>Desktop PCs</li>
+          <li>Laptops</li>
+          <li>Computer Accessories</li>
+        </ul>
 
-    <table>
-      <tr>
-        <th>Specification</th>
-        <th>Details</th>
-      </tr>
-      <tr>
-        <td>Processor</td>
-        <td>Ryzen 3 3200G</td>
-      </tr>
-      <tr>
-        <td>RAM</td>
-        <td>8GB</td>
-      </tr>
-      <tr>
-        <td>Storage</td>
-        <td>256GB SSD</td>
-      </tr>
-      <tr>
-        <td>Graphics</td>
-        <td>Integrated Graphics</td>
-      </tr>
-      <tr>
-        <td>Monitor</td>
-        <td>19-inch</td>
-      </tr>
-      <tr>
-        <td>Price</td>
-        <td>₱14,999</td>
-      </tr>
-    </table>
+        <h3>Why Shop With Us?</h3>
+        <p>
+          We offer affordable computer products that are suitable for students
+          and everyday users.
+        </p>
 
-    <h2>Order Enquiry</h2>
+        <h3>Opening Hours</h3>
+        <p>
+          Monday - Saturday<br>
+          9:00 AM - 6:00 PM
+        </p>
+      </aside>
 
-<form>
+      <main>
 
-  <label for="quantity">Quantity</label>
-  <input type="number" id="quantity" name="quantity" min="1" max="20">
+        <h1>Budget PC Package</h1>
 
-  <fieldset>
-  <legend>Delivery Method</legend>
+        <img class="product-detail-image" src="../pc.jpeg" alt="Budget PC Package">
 
-  <label for="pickup">Store Pickup</label>
-  <input type="radio" id="pickup" name="delivery" value="pickup">
+        <p>
+          This Budget PC Package is a practical computer setup for students,
+          beginners, and everyday use. It includes a Ryzen 3 3200G processor,
+          8GB RAM, 256GB SSD, integrated graphics, and a 19-inch monitor.
+        </p>
 
-  <label for="standard">Standard Delivery</label>
-  <input type="radio" id="standard" name="delivery" value="standard">
+        <table>
+          <tr>
+            <th>Specification</th>
+            <th>Details</th>
+          </tr>
+          <tr>
+            <td>Processor</td>
+            <td>Ryzen 3 3200G</td>
+          </tr>
+          <tr>
+            <td>RAM</td>
+            <td>8GB</td>
+          </tr>
+          <tr>
+            <td>Storage</td>
+            <td>256GB SSD</td>
+          </tr>
+          <tr>
+            <td>Graphics</td>
+            <td>Integrated Graphics</td>
+          </tr>
+          <tr>
+            <td>Monitor</td>
+            <td>19-inch</td>
+          </tr>
+          <tr>
+            <td>Price</td>
+            <td>₱14,999</td>
+          </tr>
+        </table>
 
-  <label for="express">Express Delivery</label>
-  <input type="radio" id="express" name="delivery" value="express">
-</fieldset>
-  <h3>Optional Extras</h3>
+        <h2>Order Enquiry</h2>
 
-<label for="windows">Windows Installation</label>
-<input type="checkbox" id="windows" name="extras" value="windows">
+        <form>
 
-<label for="setup">PC Setup Assistance</label>
-<input type="checkbox" id="setup" name="extras" value="setup">
+          <label for="quantity">Quantity</label>
+          <input
+            type="number"
+            id="quantity"
+            name="quantity"
+            min="1"
+            max="20"
+          >
 
-<label for="express-handling">Express Handling</label>
-<input type="checkbox" id="express-handling" name="extras" value="express-handling">
+          <fieldset>
+            <legend>Delivery Method</legend>
 
-<label for="contact-email">Contact Email</label>
-<input type="email" id="contact-email" name="contact-email" required>
+            <label for="pickup">Store Pickup</label>
+            <input
+              type="radio"
+              id="pickup"
+              name="delivery"
+              value="pickup"
+            >
 
-<button type="submit">Send order enquiry</button>
+            <label for="standard">Standard Delivery</label>
+            <input
+              type="radio"
+              id="standard"
+              name="delivery"
+              value="standard"
+            >
 
-</form>
+            <label for="express">Express Delivery</label>
+            <input
+              type="radio"
+              id="express"
+              name="delivery"
+              value="express"
+            >
+          </fieldset>
 
+          <h3>Optional Extras</h3>
+
+          <label for="windows">Windows Installation</label>
+          <input
+            type="checkbox"
+            id="windows"
+            name="extras"
+            value="windows"
+          >
+
+          <label for="setup">PC Setup Assistance</label>
+          <input
+            type="checkbox"
+            id="setup"
+            name="extras"
+            value="setup"
+          >
+
+          <label for="express-handling">Express Handling</label>
+          <input
+            type="checkbox"
+            id="express-handling"
+            name="extras"
+            value="express-handling"
+          >
+
+          <label for="contact-email">Contact Email</label>
+          <input
+            type="email"
+            id="contact-email"
+            name="contact-email"
+            required
+          >
+
+          <button type="submit">Send order enquiry</button>
+
+        </form>
+
+      </main>
+
+      <footer>
+        <p>&copy; 2026 Joel Bisyonet</p>
+      </footer>
+
+    </div>
   </body>
 </html>
