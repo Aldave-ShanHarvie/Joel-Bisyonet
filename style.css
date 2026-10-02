@@ -21,9 +21,23 @@ body {
   line-height: 1.6;
 }
 
-/* Layout Regions */
+/* Page Grid Skeleton */
+
+.page {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-areas:
+    "masthead masthead"
+    "side main"
+    "foot foot";
+  gap: 16px;
+  min-height: 100vh;
+}
+
+/* Header */
 
 .site-header {
+  grid-area: masthead;
   background-color: var(--dark-ink);
   color: white;
   padding: 20px;
@@ -57,7 +71,28 @@ body {
   color: var(--brand-color);
 }
 
+/* Sidebar */
+
+aside {
+  grid-area: side;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid var(--muted-grey);
+}
+
+aside h2,
+aside h3 {
+  color: var(--brand-color);
+}
+
+aside ul {
+  padding-left: 20px;
+}
+
+/* Main */
+
 main {
+  grid-area: main;
   width: 90%;
   max-width: 1100px;
   margin: 20px auto;
@@ -73,7 +108,7 @@ main {
   align-items: center;
 }
 
-/* Product Grid */
+/* Product Grid - Flexbox */
 
 .product-grid {
   display: flex;
@@ -108,11 +143,11 @@ main {
 /* Footer */
 
 footer {
+  grid-area: foot;
   background-color: var(--dark-ink);
   color: white;
   text-align: center;
   padding: 10px;
-  margin-top: 20px;
 }
 
 /* Components */
