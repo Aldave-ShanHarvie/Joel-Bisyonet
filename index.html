@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html>
   <head>
@@ -11,7 +12,7 @@
 
       <header class="site-header">
         <div class="header-info">
-          <h1>Joel Bisyonet</h1>
+          <h1 id="shop-name">Joel Bisyonet</h1>
           <p>A student-friendly store where you can hangout with your friends</p>
         </div>
 
@@ -53,7 +54,7 @@
 
         <section class="product-grid">
 
-          <article class="product-card">
+          <article class="product-card" data-price="14999">
             <img src="pc.jpeg" alt="Budget PC Package">
 
             <h3>Budget PC Package</h3>
@@ -73,7 +74,7 @@
             <a href="product/budget-pc.html">View details</a>
           </article>
 
-          <article class="product-card">
+          <article class="product-card" data-price="14999">
             <img src="vivobook.jpg" alt="ASUS Vivobook 14">
 
             <h3>ASUS Vivobook 14</h3>
@@ -90,7 +91,7 @@
             </p>
           </article>
 
-          <article class="product-card">
+          <article class="product-card" data-price="499">
             <img src="kbm.jpg" alt="Keyboard and Mouse Set">
 
             <h3>Student Gaming Keyboard & Mouse Set</h3>
@@ -108,12 +109,20 @@
           </article>
 
         </section>
+
+        <section class="shop-summary">
+          <h2>Shop Summary</h2>
+          <p>Total products: <span id="product-count">0</span></p>
+          <p>Combined listed price: <span id="product-total">₱0.00</span></p>
+        </section>
       </main>
 
       <footer>
-        <p>&copy; 2026 Joel Bisyonet</p>
+        <p id="copyright">&copy; 2026 Joel Bisyonet</p>
       </footer>
 
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
